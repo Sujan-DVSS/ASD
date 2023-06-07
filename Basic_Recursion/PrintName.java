@@ -9,9 +9,10 @@ public class PrintName {
         printName(count-1, name);
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
         String name = sc.nextLine();
         int count = sc.nextInt();
         printName(count,name);
+        }
     }
 }
