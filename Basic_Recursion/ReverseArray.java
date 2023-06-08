@@ -8,11 +8,10 @@ public class ReverseArray{
         int temp = a;
         a = b;
         b = temp;
+        
     }
 
     static void reverseArray(int[] arr, int left, int right){
-String res;
-
         if(left > right) return ;
         int temp = arr[left];
         arr[left] = arr[right];
